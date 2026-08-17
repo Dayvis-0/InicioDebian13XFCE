@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Astronaut Wind
+Description=Minimalist cinematic wind-line boot splash integrated with the astronaut landscape
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/astronaut-wind
+ScriptFile=/usr/share/plymouth/themes/astronaut-wind/astronaut-wind.script

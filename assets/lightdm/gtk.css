@@ -1,0 +1,107 @@
+* {
+    font-family: "JetBrains Mono", monospace;
+    color: #CDD6F4;
+}
+
+/* =========================================================================
+   PANEL SUPERIOR / BARRA
+   ========================================================================= */
+
+/* 1. La ventana contenedora del panel */
+#panel_window,
+window#panel_window {
+    background-color: rgba(24, 24, 37, 0.85);
+    border-bottom: 2px solid rgba(137, 180, 250, 0.3);
+    padding: 8px 16px;
+    min-height: 48px;
+}
+
+/* 2. La barra interna (menubar) y sus contenedores hijos */
+#panel_window menubar,
+#panel_window .menubar,
+#panel_window > box {
+    background: transparent;
+    border: none;
+    min-height: 44px;
+    padding: 0 10px;
+}
+
+/* 3. Todos los textos, etiquetas e indicadores del panel */
+#panel_window label,
+#panel_window menubar > menuitem,
+#panel_window menubar > menuitem label,
+#panel_window .menubar > .menuitem label,
+#menubar_box label {
+    color: #CDD6F4;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+/* 4. Íconos de la barra (reloj, apagado, etc.) */
+#panel_window image,
+#panel_window menubar > menuitem image {
+    color: #CDD6F4;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+/* =========================================================================
+   VENTANA DE LOGIN (CAJA DE USUARIO Y CONTRASEÑA)
+   ========================================================================= */
+
+#login_window,
+window#login_window {
+    background-color: rgba(30, 30, 46, 0.90);
+    border: 2px solid #89B4FA;
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    padding: 30px;
+}
+
+#login_window label {
+    color: #CDD6F4;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Inputs de texto */
+#login_window entry {
+    background-color: #11111B;
+    color: #CDD6F4;
+    border: 2px solid rgba(137, 180, 250, 0.4);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+#login_window entry:focus {
+    border-color: #89B4FA;
+    background-color: #181825;
+    box-shadow: 0 0 10px rgba(137, 180, 250, 0.5);
+}
+
+/* Botones */
+#login_window button {
+    background-color: #89B4FA;
+    color: #11111B;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+#login_window button:hover {
+    background-color: #B4BEFE;
+    box-shadow: 0 0 14px rgba(180, 190, 254, 0.6);
+}
+
+#login_window button:active {
+    background-color: #74C7EC;
+}
+
+#login_window button label {
+    color: #11111B;
+    font-weight: bold;
+}
